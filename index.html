@@ -4,45 +4,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATELIER DA VERINHA</title>
+    <style>
+      /* Reset e base */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Georgia", serif;
+        background-color: #fdf6f0;
+        color: #3d2b1f;
+        text-align: center;
+        padding: 32px 16px;
+      }
+
+      /* Títulos */
+      h1 {
+        font-size: 2rem;
+        color: #7b3f00;
+        margin: 32px 0 8px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      /* Parágrafos */
+      p {
+        font-size: 1rem;
+        margin: 8px 0 16px;
+        color: #5a3e2b;
+      }
+
+      /* Galeria de imagens */
+      figure {
+        display: inline-block;
+        margin: 12px;
+        max-width: 280px;
+        vertical-align: top;
+      }
+
+      figure picture {
+        display: block;
+      }
+
+      figcaption {
+        font-size: 0.88rem;
+        color: #7b3f00;
+        margin-top: 8px;
+        font-style: italic;
+        line-height: 1.5;
+      }
+
+      picture img {
+        width: 280px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 3px solid #c8956c;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      picture img:hover {
+        transform: scale(1.04);
+      }
+
+      /* Vídeo */
+      video {
+        display: block;
+        margin: 16px auto;
+        border-radius: 12px;
+        border: 3px solid #c8956c;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        max-width: 100%;
+      }
+    </style>
   </head>
 
   <body>
     <h1>Fotos das Panquecas</h1>
     <p>Panquecas deliciosas e saudáveis!</p>
-    <picture>
-      <source
-        media="(max-width: 360px)"
-        srcset="panquecas.jpeg"
-        type="image/png"
-      />
-      <img src="panquecas.jpeg" alt="imagen flexível" />
-    </picture>
-        <p>Panquecas com embaklagem personalizada!</p>
-    <picture>
-      <source
-        media="(max-width: 360px)"
-        srcset="panquecas1.jpeg"
-        type="image/png"
-      />
-      <img src="panquecas1.jpeg" alt="imagen flexível" />
-    </picture>
-       <picture>
-      <source
-        media="(max-width: 360px)"
-        srcset="panquecas2.jpeg"
-        type="image/png"
-      />
-      <img src="panquecas2.jpeg" alt="imagen flexível" />
-    </picture>
-        </picture>
-       <picture>
-      <source
-        media="(max-width: 360px)"
-        srcset="panquecas3.jpeg"
-        type="image/png"
-      />
-      <img src="panquecas3.jpeg" alt="imagen flexível" />
-    </picture>
+
+    <figure>
+      <picture>
+        <source
+          media="(max-width: 360px)"
+          srcset="panquecas.jpeg"
+          type="image/png"
+        />
+        <img src="panquecas.jpeg" alt="Panquecas da Verinha" />
+      </picture>
+      <figcaption>
+        Panquecas frescas e artesanais, feitas com ingredientes naturais. Leves,
+        nutritivas e irresistíveis!
+      </figcaption>
+    </figure>
+
+    <figure>
+      <picture>
+        <source
+          media="(max-width: 360px)"
+          srcset="panquecas1.jpeg"
+          type="image/png"
+        />
+        <img
+          src="panquecas1.jpeg"
+          alt="Panquecas com embalagem personalizada"
+        />
+      </picture>
+      <figcaption>
+        Embalagem personalizada com o carinho da Verinha — perfeita para
+        presentes e encomendas especiais.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <picture>
+        <source
+          media="(max-width: 360px)"
+          srcset="panquecas2.jpeg"
+          type="image/png"
+        />
+        <img src="panquecas2.jpeg" alt="Variedade de panquecas" />
+      </picture>
+      <figcaption>
+        Variedade de recheios saborosos — do doce ao salgado, tem opção para
+        todos os gostos!
+      </figcaption>
+    </figure>
+
+    <figure>
+      <picture>
+        <source
+          media="(max-width: 360px)"
+          srcset="panquecas3.jpeg"
+          type="image/png"
+        />
+        <img src="panquecas3.jpeg" alt="Panquecas prontas para servir" />
+      </picture>
+      <figcaption>
+        Apresentação impecável e apetitosa — porque comer bem também é sobre
+        beleza e capricho!
+      </figcaption>
+    </figure>
 
     <h1>NETO DA VERINHA</h1>
     <p>FILHO DA LARISSA</p>
@@ -51,6 +156,5 @@
       <source src="tessy.mp4" type="video/mp4" />
       <p>Seu navegador não tem compatibilidade para reprodução dos vídeos</p>
     </video>
-
   </body>
 </html>
